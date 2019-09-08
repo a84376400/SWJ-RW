@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>智能终端配置页面</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- normalize 里面css 初始化 针对浏览器 -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- base 里面只写公共样式 是对京东网页 头部和底部样式 -->
+  <link rel="stylesheet" href="css/base.css" />
+  <!-- 京东首页的css  只写首页的 独有的-->
+  <link rel="stylesheet" href="css/index.css">
+  
+</head>
+
+<body>
+  <!-- 京东顶部开始 -->
+  <!-- <div class="J_event">
+		<a href="#" class="w">
+			<i></i>
+		</a>
+	</div> -->
+  <!-- 京东顶部结束 -->
+  <!-- 快捷导航模块制作开始 -->
+  <div class="shortcut">
+    <div class="w">
+      <ul class="fl">
+        <li>
+          <i class="pos"></i>
+          扬州
+        </li>
+      </ul>
+      <ul class="fr">
+      </ul>
+    </div>
+  </div>
+  <!-- header 部分 start -->
+  <div class="header">
+    <div class="w inner">
+      <!-- logo 部分 -->
+      <div class="logo">
+        <h1>
+          <a href="#" title="智能终端配置页面" class="allset">一键设定</a>
+        </h1>
+      </div>
+      <!-- 搜索部分 -->
+      <div class="search">
+        <input type="text" value="请输入IP">
+        <button type="submit" flag='search'>
+          <i></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- main 部分开始 -->
+  <div class="jd">
+    <div class="w jd-inner">
+      <!-- 左侧IP列表 -->
+      <div class="jd-clo1">
+
+      </div>
+      <div class="jd-clo2">
+        <table width=100% height="600" border="1" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC"
+          class="fonts1">
+          <tr>
+            <td width="13%" rowspan="13" bgcolor="#F6F6F6">终端</td>
+            <td width="16%" height="36" bgcolor="#FFFFFF">
+              <p class="fonts1">终端 SN</p>
+            </td>
+            <td width="23%" valign="middle" bgcolor="#FFFFFF" class="_sn"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+              <p>设置SN:
+                <input type="text" class="tb_input" value="示例: 12345678912">
+                <button type="submit" name="Submit" flag="setSN">修改</button>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">终端 IP</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_terinalIP"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+                <p>修改IP地址：
+                  <input type="text" name="NewIp" class="tb_input" value="示例: 192.168.1.190">
+                  <button type="submit" name="Submit" flag="setDeviceIP">修改</button>
+                </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">NB序列号</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_nbSN"></td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">温度阈值</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_temperatureRange"></td>
+            <td bgcolor="#FFFFFF" colspan="2">
+              <div>修改温度：
+                low<input type="text" name="firstname" class="tb_input input_tem" value="示例: -1">
+                hight<input type="text" name="firstname" class="tb_input input_tem" value="示例: 60">
+                <button type="submit" name="Submit" flag='setTempthreshold' >修改</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">固件版本</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_version"></td>
+            <td bgcolor="#FFFFFF" colspan="2"></td>
+            
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">服务器IP</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_serverIP"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+              <p>设置服务器IP：
+                <input type="text" name="firstname" class="tb_input">
+                <button type="submit" name="Submit" flag='setServerIP'>修改</button>
+              </p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">NB模块</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_nb"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">Control Channel</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_channel"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+              <p>设置 channel：
+                <input type="text" name="firstname" class="tb_input input_channel" value="0">
+                摄像机数量：
+                <input type="text" name="firstname" class="tb_input input_channel" value="4">
+                NB：
+                <input type="text" name="firstname" class="tb_input input_channel" value="1">
+                <button type="submit" name="Submit" flag='setChannel'>修改</button>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">网关IP</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_gatewayIP"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+              <p>设置网关IP：
+                <input type="text" name="firstname" class="tb_input">
+                <button type="submit" name="Submit" flag='setGateway'>修改</button>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">温差</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_temperatureDiffer"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+              <p>设置温差：
+                <input type="text" name="firstname" class="tb_input" value="示例: 10">
+                <button type="submit" name="Submit" flag='setTempDiff' >修改</button>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">电压</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_voltage"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+              <p>设置电压：
+                low<input type="text" name="firstname" class="tb_input input_volt" value="示例: 2">
+                high<input type="text" name="firstname" class="tb_input input_volt" value="示例: 200">
+                <button type="submit" name="Submit" flag='setVolt'>修改</button>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">电流</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_current"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+              <p>设置电流：
+                channel<input type="text" name="firstname" class="tb_input input_current" value="示例: 1">
+                low<input type="text" name="firstname" class="tb_input input_current" value="示例: 12">
+                high<input type="text" name="firstname" class="tb_input input_current" value="示例: 300">
+                <button type="submit" name="Submit" flag='setCurrentVALUE'>修改</button>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td height="36" bgcolor="#FFFFFF">补光功率</td>
+            <td valign="middle" bgcolor="#FFFFFF" class="_lightPower"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="4" bgcolor="#F6F6F6">外设</td>
+            <td height="36" bgcolor="#FFFFFF">摄像机一 IP</td>
+            <td align="center" valign="middle" bgcolor="#FFFFFF"></td>
+            <td colspan="2" bgcolor="#FFFFFF">
+                修改IP地址:
+                <input type="text" name="firstname" class="tb_input" value="">
+                <button type="submit" name="Submit">修改</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+  <script src="./js/init.js"></script>
+</body>
+
+
+</html>

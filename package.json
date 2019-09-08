@@ -1,0 +1,28 @@
+{
+  "name": "swj-rw",
+  "version": "1.0.0",
+  "description": "单片机上位机应用程序",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "start2": "electron . --enable-logging",
+    "dev": "electron . --debug",
+    "build": "build --win --x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/jtcom/SWJ-RW.git"
+  },
+  "author": "jt",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "5.0.6",
+    "debug": "^4.1.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.14",
+    "memory-cache": "^0.2.0",
+    "nodejs-websocket": "^1.7.2"
+  }
+}
